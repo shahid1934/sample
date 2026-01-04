@@ -324,7 +324,10 @@ header {
 }
 
 /* EXTRA SMALL TEXT TWEAK */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .hero-left h1 {
+    font-size: 55px;
+  }
 
 
   /* Let clamp handle h1 size */
@@ -357,9 +360,9 @@ header {
   }
 
   .btn {
-    width: 120px;
-    font-size: 14px;
-    height: 48px;
+    width: 140px;
+    font-size: 15px;
+    height: 50px;
     border-radius: 10px;
   }
 }
@@ -506,22 +509,39 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .features-cards {
     flex-direction: column;
     gap: 14px;
-
+    /* Prevent stretching to full width */
   }
 
   .feature-card-large {
     flex-direction: column;
     text-align: left;
-    gap: 20px;
+    gap: 15px;
+    /* Reduced gap */
+    padding: 20px;
+    /* Reduced vertical padding from 50px */
   }
 
   .feature-image-wrapper {
     width: 100%;
-    height: 220px;
+    height: 150px;
+    /* Reduced height from 220px/natural */
+    border-radius: 16px;
+    /* Matched border radius */
+  }
+
+  .feature-text-content h3 {
+    font-size: 24px;
+    /* Scaled down heading */
+    margin-bottom: 10px;
+  }
+
+  .feature-text-content p {
+    font-size: 15px;
+    /* Scaled down text */
   }
 }
 
